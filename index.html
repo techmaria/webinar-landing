@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Live Webinar Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Font (Closest Match) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- SECTION 1 -->
+  <section class="full-slide hero-top">
+    <div>
+      <h1>SIGN UP<br>FOR WEBINAR</h1>
+      
+   </div>
+    <img src="images/a.jpg" alt="Webinar Preview">
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="full-slide main-content">
+    <h2>UNLOCKING INNOVATION:<br><span>A LIVE WEBINAR</span></h2>
+    <p>
+      Join us for exclusive insights and strategies from design leaders.
+    </p>
+
+    <div class="countdown">
+      <div class="time-box">
+        <h3 id="days">06</h3>
+        <span>Days</span>
+      </div>
+      <div class="time-box">
+        <h3 id="hours">23</h3>
+        <span>Hours</span>
+      </div>
+      <div class="time-box">
+        <h3 id="minutes">57</h3>
+        <span>Minutes</span>
+      </div>
+      <div class="time-box">
+        <h3 id="seconds">43</h3>
+        <span>Seconds</span>
+      </div>
+    </div>
+
+    <div class="countdown-label">LEFT UNTIL THE WEBINAR STARTS</div>
+
+    <a href="#" class="cta-btn">JOIN NOW FOR FREE</a>
+  </section>
+
+  <!-- SECTION 3 -->
+  <section class="full-slide image-grid">
+    <img src="images/1.jpg" alt="Design Work">
+    <img src="images/2.jpg" alt="Creative Process">
+  </section>
+
+  
+  <!-- SECTION 4 -->
+ <section class="footer-strip">
+  <div class="social-icon">
+    <div class="social-row">
+      <div class="social-item"><a href="#"><img src="images/fb.png"></a></div>
+      <div class="social-item"><a href="#"><img src="images/insta.png"></a></div>
+      <div class="social-item"><a href="#"><img src="images/x.png"></a></div>
+      <div class="social-item"><a href="#"><img src="images/yt.png"></a></div>
+    </div>
+
+    <div class="footer-copy">© Tech R!a 2025</div>
+  </div>
+</section>
+
+  <!-- COUNTDOWN SCRIPT -->
+  <script>
+    const targetDate = new Date();
+    targetDate.setDate(targetDate.getDate() + 6);
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((distance / (1000 * 60)) % 60);
+      const seconds = Math.floor((distance / 1000) % 60);
+
+      document.getElementById("days").innerText = String(days).padStart(2, "0");
+      document.getElementById("hours").innerText = String(hours).padStart(2, "0");
+      document.getElementById("minutes").innerText = String(minutes).padStart(2, "0");
+      document.getElementById("seconds").innerText = String(seconds).padStart(2, "0");
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+  </script>
+
+</body>
+</html>
