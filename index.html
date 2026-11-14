@@ -3,25 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Free Networking Webinar | Tech R!a</title>
-  <meta name="description" content="Register for the free Tech R!a live webinar and choose your preferred networking masterclass topics.">
+  <title>Become a Network Engineer | Free Masterclass | Tech R!a</title>
+  <meta name="description" content="Become a network engineer. Register for the free Tech R!a live masterclass and download the free CCNA Portable Guide.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- 1. HERO: headline + short webinar video -->
+  <!-- HERO -->
   <header class="hero">
     <div class="wrap hero-grid">
-      <h1>Sign up<br>for webinar</h1>
+      <div class="hero-copy">
+        <p class="badge">Free live masterclass on Zoom</p>
+        <h1>Become a <em>Network Engineer</em></h1>
+        <p class="hero-sub">Register for our upcoming free masterclass and watch real networks get built, configured and fixed live. No experience needed.</p>
+        <div class="countdown" role="timer" aria-live="off">
+          <div class="time-box"><strong id="days">00</strong><span>Days</span></div>
+          <div class="time-box"><strong id="hours">00</strong><span>Hours</span></div>
+          <div class="time-box"><strong id="minutes">00</strong><span>Minutes</span></div>
+          <div class="time-box"><strong id="seconds">00</strong><span>Seconds</span></div>
+        </div>
+        <p class="countdown-label" id="countdown-label">until the masterclass goes live</p>
+        <div class="btn-row">
+          <a href="#register" class="cta-btn">Reserve my free seat</a>
+          <a href="#guide" class="ghost-btn">Get the free CCNA guide</a>
+        </div>
+      </div>
 
       <div class="video-slot" id="video-slot">
         <div class="video-frame" id="video-frame">
-          <!-- Autoplay only works muted; viewers can unmute with the player controls. To change the video, replace neVrgWczDA4 with your video ID (add &amp;start=26 after rel=0 to begin at 0:26). -->
           <iframe src="https://www.youtube.com/embed/neVrgWczDA4?autoplay=1&amp;mute=1&amp;playsinline=1&amp;rel=0"
-            title="Tech R!a webinar preview"
+            title="Tech R!a masterclass preview"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <button class="mini-close" id="mini-close" type="button" aria-label="Close mini video player">&times;</button>
@@ -30,110 +44,103 @@
     </div>
   </header>
 
-  <!-- 2. REGISTRATION -->
   <main>
-    <section class="register">
+    <!-- WHY / PROMISE -->
+    <section class="promise">
       <div class="wrap">
-        <span class="eyebrow">Free live webinar</span>
-        <h2>Reserve your seat:<span>a live webinar</span></h2>
-        <p class="lead">
-          Transform your career with role-based &amp; hands-on projects in all our I.T. courses &ndash; no prior experience required!
-          Perfect for beginners, our instructor-led Zoom training offers real-world solutions to I.T. problems to get you job-ready.
-          Attend our free course/webinar and experience real-world configuration and troubleshooting.
-        </p>
-        <p class="lead lead-strong">Boost your career with globally recognized certification</p>
+        <h2>Stop watching, start working like an engineer.</h2>
+        <p class="lead">Our I.T. courses are role-based and hands-on, so you practice the exact work employers hire for. Beginners are welcome: in our instructor-led Zoom training you solve real-world I.T. problems, configure and troubleshoot live, and leave job-ready.</p>
+        <ul class="trust">
+          <li><strong>Role-based</strong> and hands-on projects</li>
+          <li><strong>Instructor-led</strong> live on Zoom</li>
+          <li><strong>Beginner friendly</strong> no experience required</li>
+          <li><strong>Globally recognized</strong> certification path</li>
+        </ul>
+      </div>
+    </section>
 
-        <div class="countdown" role="timer" aria-live="off">
-          <div class="time-box"><strong id="days">00</strong><span>Days</span></div>
-          <div class="time-box"><strong id="hours">00</strong><span>Hours</span></div>
-          <div class="time-box"><strong id="minutes">00</strong><span>Minutes</span></div>
-          <div class="time-box"><strong id="seconds">00</strong><span>Seconds</span></div>
+    <!-- FREE GUIDE DOWNLOAD -->
+    <section class="guide" id="guide">
+      <div class="wrap guide-grid">
+        <div class="book" aria-hidden="true">
+          <div class="book-cover"><b>CCNA</b><span>200-301</span><i>Portable Command Guide</i></div>
         </div>
-        <p class="countdown-label" id="countdown-label">Left until the webinar starts</p>
-
-        <a href="#register" class="cta-btn">Join now for free</a>
-
-        <div class="form-card" id="register">
-          <div class="form-placeholder"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLScswzW-kZK8_EfvgPOoFuBRA-Bo6Geo6wNS667LICS07vyjEQ/viewform?embedded=true" title="Webinar registration form" loading="lazy">Loading…</iframe>
-        </div>
+        <div class="guide-copy">
+          <p class="badge badge-dark">Free gift. Yours today.</p>
+          <h2>Download the free CCNA Portable Guide</h2>
+          <p>Keep the commands every network engineer needs one tap away. Use it during the masterclass, in your labs and while you study for your CCNA.</p>
+          <a class="cta-btn dl-btn" href="ccna-portable-command-guide.pdf" download="CCNA-200-301-Portable-Command-Guide.pdf">&#11015; Download free PDF guide</a>
+          <p class="fine">Instant download. No sign-up needed. Then <a href="#register">reserve your seat</a> for the live masterclass.</p>
         </div>
       </div>
     </section>
 
-    <!-- 3. TOPICS -->
+    <!-- TOPICS -->
     <section class="topics">
       <div class="wrap">
-        <h2>Preferred topics for upcoming trainings &amp; seminars</h2>
-
+        <h2>What you will see in the free masterclass</h2>
+        <p class="lead">Four free sessions that take you from the big picture to hands-on configuration.</p>
         <div class="topic-grid">
-          <article class="topic">
-            <img src="images/topic-design.jpg" alt="Server hallway in a data center" loading="lazy">
-            <small>Free masterclass</small>
-            <h3>Network Design Concept</h3>
-          </article>
-          <article class="topic">
-            <img src="images/topic-vlan.jpg" alt="Engineer working on network configuration at a desk" loading="lazy">
-            <small>Free masterclass</small>
-            <h3>Subnetting and VLAN Application</h3>
-          </article>
-          <article class="topic">
-            <img src="images/topic-ospf.jpg" alt="Network rack with patch cables" loading="lazy">
-            <small>Free masterclass</small>
-            <h3>OSPF Routing Hands-On Lab</h3>
-          </article>
-          <article class="topic">
-            <img src="images/topic-mitigation.jpg" alt="Group of learners working on laptops" loading="lazy">
-            <small>Free masterclass</small>
-            <h3>Network Mitigation Technique</h3>
-          </article>
+          <article class="topic"><img src="images/topic-design.jpg" alt="Server hallway in a data center" loading="lazy"><small>Free masterclass</small><h3>Network Design Concept</h3></article>
+          <article class="topic"><img src="images/topic-vlan.jpg" alt="Engineer working on network configuration at a desk" loading="lazy"><small>Free masterclass</small><h3>Subnetting and VLAN Application</h3></article>
+          <article class="topic"><img src="images/topic-ospf.jpg" alt="Network rack with patch cables" loading="lazy"><small>Free masterclass</small><h3>OSPF Routing Hands-On Lab</h3></article>
+          <article class="topic"><img src="images/topic-mitigation.jpg" alt="Group of learners working on laptops" loading="lazy"><small>Free masterclass</small><h3>Network Mitigation Technique</h3></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGISTRATION -->
+    <section class="register" id="register">
+      <div class="wrap">
+        <h2>Your network engineering career starts with one free seat</h2>
+        <p class="lead">The countdown is running and the masterclass is free. Boost your career with globally recognized certification: register now and be in the room when it starts.</p>
+        <a href="https://forms.gle/pbZDhKMinHztk6q38" class="cta-btn" target="_blank" rel="noopener">Join now for free</a>
+        <p class="fine">Prefer to stay on this page? Use the form below.</p>
+        <div class="form-card">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScswzW-kZK8_EfvgPOoFuBRA-Bo6Geo6wNS667LICS07vyjEQ/viewform?embedded=true" title="Masterclass registration form" loading="lazy">Loading…</iframe>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- 4. FOOTER -->
   <footer class="footer-strip">
     <div class="social-row">
-      <a href="#" aria-label="Facebook"><img src="images/fb.png" alt=""></a>
-      <a href="#" aria-label="Instagram"><img src="images/insta.png" alt=""></a>
-      <a href="#" aria-label="X"><img src="images/x.png" alt=""></a>
-      <a href="#" aria-label="YouTube"><img src="images/yt.png" alt=""></a>
+      <a href="https://www.facebook.com/riaactionlab" aria-label="Facebook" target="_blank" rel="noopener"><img src="images/fb.png" alt=""></a>
+      <a href="https://www.instagram.com/riaactionlab" aria-label="Instagram" target="_blank" rel="noopener"><img src="images/insta.png" alt=""></a>
+      <a href="https://x.com/riaactionlab" aria-label="X" target="_blank" rel="noopener"><img src="images/x.png" alt=""></a>
+      <a href="https://www.youtube.com/@RiaActionLab" aria-label="YouTube" target="_blank" rel="noopener"><img src="images/yt.png" alt=""></a>
     </div>
     <p class="footer-copy">&copy; Tech R!a <span id="year">2026</span></p>
   </footer>
 
   <script>
-    // SET YOUR WEBINAR DATE AND TIME HERE (this example is Philippine time, UTC+8)
+    // SET YOUR WEBINAR DATE AND TIME HERE (Philippine time, UTC+8)
     var WEBINAR_DATE = new Date("2026-12-05T19:00:00+08:00");
-
-    function pad(n) { return String(n).padStart(2, "0"); }
-
+    var pad = function (n) { return String(n).padStart(2, "0"); };
     function tick() {
       var d = Math.max(0, WEBINAR_DATE - new Date());
-      document.getElementById("days").textContent = pad(Math.floor(d / 864e5));
-      document.getElementById("hours").textContent = pad(Math.floor(d / 36e5) % 24);
-      document.getElementById("minutes").textContent = pad(Math.floor(d / 6e4) % 60);
-      document.getElementById("seconds").textContent = pad(Math.floor(d / 1e3) % 60);
-      if (d === 0) document.getElementById("countdown-label").textContent = "The webinar has started";
+      days.textContent = pad(Math.floor(d / 864e5));
+      hours.textContent = pad(Math.floor(d / 36e5) % 24);
+      minutes.textContent = pad(Math.floor(d / 6e4) % 60);
+      seconds.textContent = pad(Math.floor(d / 1e3) % 60);
+      if (d === 0) document.getElementById("countdown-label").textContent = "The masterclass has started";
     }
-
     document.getElementById("year").textContent = new Date().getFullYear();
-    setInterval(tick, 1000);
-    tick();
+    setInterval(tick, 1000); tick();
 
-    // Floating mini video: when the hero video scrolls out of view, it keeps playing in the corner
+    // Hide social icons that have no link yet
+    var links = document.querySelectorAll('.social-row a[href="#"]');
+    links.forEach(function (a) { a.hidden = true; });
+    if (links.length === 4) document.querySelector(".social-row").hidden = true;
+
+    // Floating mini video once the hero video scrolls past
     (function () {
-      var slot = document.getElementById("video-slot");
-      var frame = document.getElementById("video-frame");
-      var io = new IntersectionObserver(function (entries) {
-        var e = entries[0];
-        frame.classList.toggle("is-mini", !e.isIntersecting && e.boundingClientRect.top < 0);
+      var slot = document.getElementById("video-slot"), frame = document.getElementById("video-frame");
+      var io = new IntersectionObserver(function (e) {
+        frame.classList.toggle("is-mini", !e[0].isIntersecting && e[0].boundingClientRect.top < 0);
       }, { threshold: 0.25 });
       io.observe(slot);
-      document.getElementById("mini-close").addEventListener("click", function () {
-        io.disconnect();
-        frame.remove();
-      });
+      document.getElementById("mini-close").addEventListener("click", function () { io.disconnect(); frame.remove(); });
     })();
   </script>
 </body>

@@ -265,3 +265,54 @@ h1, h2, h3 { font-family: var(--head); text-transform: uppercase; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
+
+/* ================= v2 UPGRADE ================= */
+.badge{display:inline-block;background:var(--btn);color:#fff;font-weight:900;font-size:.8rem;letter-spacing:.06em;padding:.4rem .9rem;border-radius:2rem;margin-bottom:1.1rem}
+.badge-dark{background:var(--dark)}
+.hero{background:radial-gradient(60rem 30rem at 85% 0%,rgba(255,63,199,.28),transparent 60%),radial-gradient(40rem 25rem at 0% 100%,rgba(255,90,44,.18),transparent 60%),var(--dark)}
+.hero h1{font-weight:600;font-size:clamp(2.6rem,9vw,4.2rem);line-height:1.02;margin-bottom:1rem}
+.hero h1 em{display:block;font-style:normal;background:linear-gradient(90deg,var(--orange),#ff2fd0);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-sub{font-size:clamp(1rem,2.2vw,1.2rem);color:#e9e9ee;max-width:34rem;margin-bottom:1.6rem}
+.hero .countdown{justify-content:flex-start;margin-bottom:.6rem}
+.hero .time-box{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);min-width:clamp(3.8rem,15vw,5.6rem)}
+.hero .time-box strong{font-size:clamp(1.8rem,6vw,3rem)}
+.hero .countdown-label{margin-bottom:1.5rem;color:#ff8fe0}
+.btn-row{display:flex;flex-wrap:wrap;gap:.8rem}
+.cta-btn{background:linear-gradient(90deg,var(--orange),#e0158f);box-shadow:0 .6rem 1.5rem rgba(224,21,143,.35)}
+.cta-btn:hover{background:linear-gradient(90deg,#e64a1c,#b80f77)}
+.ghost-btn{display:inline-block;padding:1rem 1.6rem;border:2px solid rgba(255,255,255,.5);border-radius:.4rem;color:#fff;font-weight:900;text-decoration:none;letter-spacing:.05em;text-transform:uppercase;font-size:.95rem;transition:background .25s}
+.ghost-btn:hover{background:rgba(255,255,255,.12)}
+@media(min-width:900px){.hero-grid{grid-template-columns:1.1fr .9fr}.hero h1{font-size:clamp(3rem,5.2vw,5rem)}}
+
+.promise{padding-block:var(--section-y);text-align:center}
+.promise h2{font-weight:600;font-size:clamp(1.8rem,5vw,3rem);line-height:1.12;max-width:46rem;margin:0 auto 1.2rem}
+.promise .lead,.topics .lead,.register .lead{margin-bottom:2rem}
+.trust{list-style:none;display:grid;gap:.8rem;grid-template-columns:1fr;max-width:62rem;margin:0 auto}
+@media(min-width:600px){.trust{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1100px){.trust{grid-template-columns:repeat(4,1fr)}}
+.trust li{padding:1.1rem 1rem;border-radius:.8rem;background:#fdeef7;border-left:.35rem solid var(--btn);text-align:left}
+.trust strong{display:block;font-family:var(--head);text-transform:uppercase;font-weight:500;font-size:1.15rem}
+
+.guide{background:linear-gradient(135deg,var(--pink-soft),#ffb08a);padding-block:var(--section-y)}
+.guide-grid{display:grid;gap:2.5rem;align-items:center;justify-items:center}
+@media(min-width:800px){.guide-grid{grid-template-columns:.8fr 1.2fr;justify-items:stretch}}
+.book{perspective:60rem}
+.book-cover{width:min(15rem,60vw);aspect-ratio:3/4;background:linear-gradient(160deg,#16161c,#2a1030);color:#fff;border-radius:.3rem .7rem .7rem .3rem;border-left:.7rem solid var(--btn);padding:1.4rem 1.2rem;display:flex;flex-direction:column;justify-content:space-between;transform:rotateY(-18deg) rotate(-2deg);box-shadow:1.2rem 1.5rem 2.5rem rgba(60,0,40,.45);margin-inline:auto}
+.book-cover b{font-family:var(--head);font-weight:600;font-size:3.6rem;line-height:1}
+.book-cover span{font-family:var(--head);font-size:1.6rem;color:#ff8fe0;letter-spacing:.08em}
+.book-cover i{font-style:normal;font-weight:700;border-top:2px solid var(--orange);padding-top:.6rem}
+.guide-copy{text-align:center}
+@media(min-width:800px){.guide-copy{text-align:left}}
+.guide-copy h2{font-weight:600;font-size:clamp(2rem,5.5vw,3.5rem);line-height:1.08;margin-bottom:1rem}
+.guide-copy p{max-width:34rem;margin-bottom:1.4rem;font-size:1.1rem}
+.dl-btn{background:var(--dark);box-shadow:0 .6rem 1.5rem rgba(0,0,0,.3)}
+.dl-btn:hover{background:#000}
+.fine{font-size:.9rem;margin:1rem 0 0!important}
+.fine a{color:inherit;font-weight:700}
+
+.topics{background:#fdf6fa}
+.topics .lead{margin-inline:auto}
+.register{background:linear-gradient(180deg,#fff 0%,#f4c4d8 100%)}
+.register h2{font-size:clamp(1.9rem,5.5vw,3.2rem);max-width:46rem;margin-inline:auto}
+.form-card iframe{min-height:90rem}
+@media(min-width:700px){.form-card iframe{min-height:78rem}}
